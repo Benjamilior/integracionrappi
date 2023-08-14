@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "stock-bsale",
+    "private_key_id": "31055971934abe68d29220270b90aae1dd44cbff",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCwTRQA6WwJa4pl\nVhVp6ut9JdylZN9yD1CVU3YTyxDS4Gl0ULBriwNBi0WEI6brscLm7r4KWs5o48aS\nu8kWvN4ymEP45G0Csu5vZ3pMBktBoA42voDEsQrHj5FchdMPkPcthvMWQbM1qeOh\nb8VwENfnutRyLpDQXj1x//H4oBj7NnA5ortWtIezvyeNip4+Q3shSHqP/dvwr/hf\nYjM5/gluNU5xat8Sl+zclq4pUKS3YdIx1CViFipdioV2DjLTW5XcBrOESz8ncaBj\nJRm/45h9LYo/pIOHAi9IcR+Z6Xip+NlRzMzt2q0LzLwHiMGSNOXhpiK3C+Of0TpX\n+GlEv505AgMBAAECggEAHHKjiq4fp7l5oHZuiCPHEe+dFfcb8xyzhRTtla4LretW\nONWYUhIhWV8uvW6/TYLmjzrw4Vzbt6MhdKXmgcvCEuns9eluCaRzwvgwjLnrRNCd\n2omM37AtrBvnecWCVB2xNOB0sx+w2jTqrS8K7dVZ8WN9SltnNKgwRAfntJWo0kgm\nKhavw8YsceD2HNUkUbOm44yjM/PDQM1K1wY1F4BO1/iJRJuHnqEGdzC8jGbNHrMI\nqx2tIDx/m1zDotjNnpR6kFA2ldwvzxSfwGGkLBT10WjBT4bh9rMA/ACyxYmim6Ij\nGD27gwwC4+8zXj/6rWlFitgFrCK5CcpgXVOo1r9zHQKBgQD2p0SEIX6QYCU708gG\nkmYuFn/QcEKe/4amvbtAbNpOayXSxhckgs4wnNllatcT6B46kITe7klhjZZwjGuB\nQ1vIfhLvfQjR7N9m9MQ2CaO6E8r5FpuIXv3a+xtzLQRtqGyCkgWbLgKXGfFGyuVd\nu7HLLLdLyPN3BLe5+o+dBCSdMwKBgQC2+1ZyzAEQ9iwvnCXE5U+Soqb/RgeDOn+h\nExcBMB3W8PfHEuTZtqy7WRrB+XxQELHTqZSZ5knxmzH1HNleRw7bK61xn1cC8vQN\nlxxwojO4Aj6yj4DGWDESy4O/NIEb0vplKv/rdF/9vO+wRPUYCHqPXM1SueSv/RVu\nQ7MpM4zj4wKBgCB8t5GPt9PcVgsjQd1buwmm/P6/SocWsO2VX+yEadyaUEkKvlGY\nyP+uKRQqllmQ4SpljpquWAv5Ui9Qz3gfHx+xO10/4sGDqYkuBAn6Cw6fPMTCLYow\nuM729A6fh03KOUCZaxOdY8nzKMxiPQOzjR9trFbXCPpMLMbaMcBEo23xAoGBAKq/\nQH0g9sHAJZ1LxUbFgIphsxm0XGBNXzmMWcQnBUFEXMJsVBcAypCMZlapmyIPYhEU\nRnGSHmARJP4ILKI4BpnoWRIU0RoUYj6oSsaj5UUI+z6egFkVhL14IXlz4iJ3rmZn\nSKaLUuOwwa2nu1nw14Ud4Q8YHllG/g+FpxKEYy1nAoGBAMP2fDhGkJ1FVqZqcgKW\nY1VlRKG9EVlbD3bncHGV/hnRrnVE6hAADF5Lj8DI0rn9oMj8JJtQG51lr9UnshDN\nvXWguvr4fqe+nGQfChRDbprgX7ev/V77wYgaqnN5n458616vDfvrIUSL/nW9rujY\nMLI9CtkaBKZ2hVhU/R8n9tt7\n-----END PRIVATE KEY-----\n",
+    "client_email": "bmunoz@stock-bsale.iam.gserviceaccount.com",
+    "client_id": "100190933170995381209",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bmunoz%40stock-bsale.iam.gserviceaccount.com"
+  }
+  
