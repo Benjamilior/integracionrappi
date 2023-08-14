@@ -1,28 +1,4 @@
-import requests
-url = "https://services.grability.rappi.com/api/cpgs-integration/datasets"
-headers = {
-    "Content-Type": "application/json",
-    "api_key": "455fcb8c-135a-4481-86e2-c85801241a2f"
-}
-payload = {
-  "records":[
-  {  
-  "id": "321321",
-  "store_id": "45",
-  "ean": "7798075341380",
-  "name": "Agility",
-  "trademark": "Acana",
-  "price": 21990,
-  "discount_price": 0,
-  "stock": 4,
-  "sale_type": "U",
-  "is_available": True
-  }
-  
-  ]
-}
-
-payload2 = [
+[
  {
    "Id tienda": 900037178,
    "Id": 39638174,
@@ -33,7 +9,7 @@ payload2 = [
    "Price": 23990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -46,7 +22,7 @@ payload2 = [
    "Price": 66990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -59,7 +35,7 @@ payload2 = [
    "Price": 23990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100782farmina-vetlife-natural-feline_gastro-intestinal_direito.png?v=1688082750"
  },
  {
@@ -72,7 +48,7 @@ payload2 = [
    "Price": 23990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100784farmina-vetlife-natural-feline_renal_direito.png?v=1688082871"
  },
  {
@@ -85,7 +61,7 @@ payload2 = [
    "Price": 66990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -98,7 +74,7 @@ payload2 = [
    "Price": 23990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100785farmina-vetlife-natural-feline_urinary_struvite_direito.png?v=1688082977"
  },
  {
@@ -111,7 +87,7 @@ payload2 = [
    "Price": 23990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100786farmina-vetlife-natural-canine-gastro-intestinal_direito.png?v=1688082673"
  },
  {
@@ -124,7 +100,7 @@ payload2 = [
    "Price": 23990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100773farmina-vetlife-natural-canine-obesity-diabetic_direito.png?v=1688082566"
  },
  {
@@ -137,7 +113,7 @@ payload2 = [
    "Price": 1990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/drinkternera.jpg?v=1689004877"
  },
  {
@@ -150,7 +126,7 @@ payload2 = [
    "Price": 1990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/drinksalmon.jpg?v=1689005007"
  },
  {
@@ -163,7 +139,7 @@ payload2 = [
    "Price": 4290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/2_179ad0a8-4355-436e-bfad-b8affdae4e7d.png?v=1688422294"
  },
  {
@@ -176,7 +152,7 @@ payload2 = [
    "Price": 4290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/6_8ce48062-b70a-4ea7-b3ef-25dd88924aea.png?v=1688421790"
  },
  {
@@ -189,7 +165,7 @@ payload2 = [
    "Price": 14990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Pica-A-3.jpg?v=1682038949"
  },
  {
@@ -202,7 +178,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PATESALMON.png?v=1666624860"
  },
  {
@@ -215,7 +191,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PATEPUPPY.png?v=1666624834"
  },
  {
@@ -228,7 +204,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/MONOPROTEINRABBIT.png?v=1666624935"
  },
  {
@@ -241,7 +217,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/MONOPROTEINLAMB.png?v=1666624915"
  },
  {
@@ -254,7 +230,7 @@ payload2 = [
    "Price": 58990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRITCARECATGFSTERILIZEDWEIGHTCONTROL7_5KG.png?v=1666639955"
  },
  {
@@ -267,7 +243,7 @@ payload2 = [
    "Price": 14990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Pica-S-3.jpg?v=1682038950"
  },
  {
@@ -280,7 +256,7 @@ payload2 = [
    "Price": 43990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Domingo-GF-1_ba91f9c7-52a7-4db8-8c50-2a16cead4127.png?v=1682038014"
  },
  {
@@ -293,7 +269,7 @@ payload2 = [
    "Price": 43990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Domingo-PR-1-B.jpg?v=1682037910"
  },
  {
@@ -306,7 +282,7 @@ payload2 = [
    "Price": 14990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Pica-A-3.jpg?v=1682038949"
  },
  {
@@ -319,7 +295,7 @@ payload2 = [
    "Price": 17490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/1_fa78356b-2afa-4dbe-97d0-44e0e00bcc8e.png?v=1687142251"
  },
  {
@@ -332,7 +308,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/1_441a3710-a2ff-46fb-a49e-123807a0b7fe.png?v=1687142240"
  },
  {
@@ -345,7 +321,7 @@ payload2 = [
    "Price": 13490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/3_0b142b3f-e7a2-4fe8-b9d7-ccfd43a1f98d.png?v=1687142139"
  },
  {
@@ -358,7 +334,7 @@ payload2 = [
    "Price": 46990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FITFORMULAPERROADULTO20KG.png?v=1661529609"
  },
  {
@@ -371,7 +347,7 @@ payload2 = [
    "Price": 22990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/kongxl.png?v=1660173326"
  },
  {
@@ -384,7 +360,7 @@ payload2 = [
    "Price": 11990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/035585111117.jpg?v=1660173326"
  },
  {
@@ -397,7 +373,7 @@ payload2 = [
    "Price": 6990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/t2-7-20181025201007-20181025201727-1000x10002524.jpg?v=1660173326"
  },
  {
@@ -410,7 +386,7 @@ payload2 = [
    "Price": 11990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/kongpuppys.jpg?v=1660173491"
  },
  {
@@ -423,7 +399,7 @@ payload2 = [
    "Price": 10990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/035585131214.jpg?v=1653427097"
  },
  {
@@ -436,7 +412,7 @@ payload2 = [
    "Price": 6990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/035585131115.jpg?v=1653427097"
  },
  {
@@ -449,7 +425,7 @@ payload2 = [
    "Price": 11990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/035585111551.jpg?v=1655324343"
  },
  {
@@ -462,7 +438,7 @@ payload2 = [
    "Price": 8990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/035585111490.png?v=1655324343"
  },
  {
@@ -475,7 +451,7 @@ payload2 = [
    "Price": 6990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/035585111438.jpg?v=1655324343"
  },
  {
@@ -488,7 +464,7 @@ payload2 = [
    "Price": 21990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/CapturadePantalla2023-07-12ala_s_16.38.32.png?v=1689194413"
  },
  {
@@ -501,7 +477,7 @@ payload2 = [
    "Price": 20990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/1_cfa11f7e-bc9b-405d-a8d1-09a5ba9e30c4.png?v=1687976228"
  },
  {
@@ -514,7 +490,7 @@ payload2 = [
    "Price": 11990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/2_0b6bf8e3-b6ab-49b3-bc4c-5c22d4493554.png?v=1687976228"
  },
  {
@@ -527,7 +503,7 @@ payload2 = [
    "Price": 4490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/Dentastix-RG-7x270gr.png?v=1686321382"
  },
  {
@@ -540,7 +516,7 @@ payload2 = [
    "Price": 2990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/Dentstixx3_1_1.png?v=1686321193"
  },
  {
@@ -553,7 +529,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/Dentstixx7RM_1_1.png?v=1686321634"
  },
  {
@@ -566,7 +542,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/phisio.jpg?v=1668699338"
  },
  {
@@ -579,7 +555,7 @@ payload2 = [
    "Price": 9990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/gsc_112788283_406957_1.jpg?v=1668783317"
  },
  {
@@ -592,7 +568,7 @@ payload2 = [
    "Price": 10990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/035585125008.jpg?v=1660173326"
  },
  {
@@ -605,7 +581,7 @@ payload2 = [
    "Price": 7990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/kongs.png?v=1660173326"
  },
  {
@@ -618,7 +594,7 @@ payload2 = [
    "Price": 13990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/X_78000060070333669.jpg?v=1675868576"
  },
  {
@@ -631,7 +607,7 @@ payload2 = [
    "Price": 25990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/4000498032220_2975b326-3b8f-490a-8620-facee1273fb0.jpg?v=1659637231"
  },
  {
@@ -644,7 +620,7 @@ payload2 = [
    "Price": 22990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/flexi_rosa_m_cinta_plus_1_4.jpg?v=1659637432"
  },
  {
@@ -657,7 +633,7 @@ payload2 = [
    "Price": 9990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/NAXPET10MG-10COMP.png?v=1661732891"
  },
  {
@@ -670,7 +646,7 @@ payload2 = [
    "Price": 20190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY3375015_f8b5268b-a417-4c43-9141-7845755a5f18.jpg?v=1623278385"
  },
  {
@@ -683,7 +659,7 @@ payload2 = [
    "Price": 9590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BALM10ML.png?v=1666037324"
  },
  {
@@ -696,7 +672,7 @@ payload2 = [
    "Price": 18990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/silimarina_vitanimal_90.jpg?v=1660148091"
  },
  {
@@ -709,7 +685,7 @@ payload2 = [
    "Price": 12790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DIARREPASSUSPENSIONORAL100ml.png?v=1661734128"
  },
  {
@@ -722,7 +698,7 @@ payload2 = [
    "Price": 9490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CANIGESTCOMBI16ML.png?v=1662652310"
  },
  {
@@ -735,7 +711,7 @@ payload2 = [
    "Price": 21390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/clavaseptin-amoxicilina-500-mg-10-comprimidos-masticables.jpg?v=1664828493"
  },
  {
@@ -748,7 +724,7 @@ payload2 = [
    "Price": 17090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CHECLACM056.jpg?v=1664828493"
  },
  {
@@ -761,7 +737,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/beaphar-lactol-kitten-milk.jpg?v=1662400686"
  },
  {
@@ -774,7 +750,7 @@ payload2 = [
    "Price": 51990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FITFORMULAPERROSENIOR20KG.png?v=1661530214"
  },
  {
@@ -787,7 +763,7 @@ payload2 = [
    "Price": 6790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/SHAMPOOAVENA.png?v=1666037243"
  },
  {
@@ -800,7 +776,7 @@ payload2 = [
    "Price": 14990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Pet-it-Protect-it-3.jpg?v=1666785030"
  },
  {
@@ -813,7 +789,7 @@ payload2 = [
    "Price": 11790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Otiflex_Limpiador_25_ml_solucion_otica_7798176420625.jpg?v=1660254866"
  },
  {
@@ -826,7 +802,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Mesadetrabajo17.png?v=1661733112"
  },
  {
@@ -839,7 +815,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PATEPUPPY.png?v=1666624834"
  },
  {
@@ -852,7 +828,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PATESALMON.png?v=1666624860"
  },
  {
@@ -865,7 +841,7 @@ payload2 = [
    "Price": 4790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/MONOPROTEINRABBIT.png?v=1666624935"
  },
  {
@@ -878,7 +854,7 @@ payload2 = [
    "Price": 74890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -891,7 +867,7 @@ payload2 = [
    "Price": 4790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/MONOPROTEINLAMB.png?v=1666624915"
  },
  {
@@ -904,7 +880,7 @@ payload2 = [
    "Price": 58990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRITCARECATSTERILIZEDURINARY.png?v=1664922184"
  },
  {
@@ -917,7 +893,7 @@ payload2 = [
    "Price": 25590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/VTQALCKI133.png?v=1662400686"
  },
  {
@@ -930,7 +906,7 @@ payload2 = [
    "Price": 21190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/enrroxina-150-mg-10-comprimidos.jpg?v=1660255241"
  },
  {
@@ -943,7 +919,7 @@ payload2 = [
    "Price": 9490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ENROXINA50x10comp.png?v=1662652482"
  },
  {
@@ -956,7 +932,7 @@ payload2 = [
    "Price": 50290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/TRAUMEELMODULADORDEINFLAMACIONYDOLORb.png?v=1661732777"
  },
  {
@@ -969,7 +945,7 @@ payload2 = [
    "Price": 29890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/TRAUMEELMODULADORDEINFLAMACIONYDOLORa.png?v=1661732777"
  },
  {
@@ -982,7 +958,7 @@ payload2 = [
    "Price": 16590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DERMISOLONACOMPx10.png?v=1661732982"
  },
  {
@@ -995,7 +971,7 @@ payload2 = [
    "Price": 8490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HEMOLITANPERROSYGATOS30.png?v=1666100392"
  },
  {
@@ -1008,7 +984,7 @@ payload2 = [
    "Price": 74890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HILLSRDCANINOWEIGHTLOSS7_98KG.png?v=1661560425"
  },
  {
@@ -1021,7 +997,7 @@ payload2 = [
    "Price": 6590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HILL_SCANINOFELINOADLATA156GR.png?v=1661637496"
  },
  {
@@ -1034,7 +1010,7 @@ payload2 = [
    "Price": 28890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/OXTRINCONDROPROTECTOR30COMP.png?v=1665058318"
  },
  {
@@ -1047,7 +1023,7 @@ payload2 = [
    "Price": 20290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CERENIA24mgx4comp.png?v=1661734223"
  },
  {
@@ -1060,7 +1036,7 @@ payload2 = [
    "Price": 20290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ACANALIGHT_FIT.png?v=1669725562"
  },
  {
@@ -1073,7 +1049,7 @@ payload2 = [
    "Price": 22790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Acanafirstfeastgato.png?v=1678800529"
  },
  {
@@ -1086,7 +1062,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PATETURKEY.png?v=1666624880"
  },
  {
@@ -1099,7 +1075,7 @@ payload2 = [
    "Price": 6090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FUNCTIONALLIGHT.png?v=1666624962"
  },
  {
@@ -1112,7 +1088,7 @@ payload2 = [
    "Price": 6090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FUNCTIONALMOBILITY.png?v=1666624983"
  },
  {
@@ -1125,7 +1101,7 @@ payload2 = [
    "Price": 6090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FUNCTIONALSKINANDCOAT.png?v=1666625000"
  },
  {
@@ -1138,7 +1114,7 @@ payload2 = [
    "Price": 69990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/largejunio12.png?v=1686776702"
  },
  {
@@ -1151,7 +1127,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PATEDUCK.png?v=1666624791"
  },
  {
@@ -1164,7 +1140,7 @@ payload2 = [
    "Price": 6190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BEAPHARCEPILLODENTALDEDEDO.png?v=1663094943"
  },
  {
@@ -1177,7 +1153,7 @@ payload2 = [
    "Price": 14990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BAYADVPE044_4b7abbfe-3856-4467-9670-f71c9b1a6d42.jpg?v=1669743250"
  },
  {
@@ -1190,7 +1166,7 @@ payload2 = [
    "Price": 1090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ehliqueantel.png?v=1660225784"
  },
  {
@@ -1203,7 +1179,7 @@ payload2 = [
    "Price": 35290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROYALCANINCANINOGASTROINTESTINAL2KG.png?v=1661551169"
  },
  {
@@ -1216,7 +1192,7 @@ payload2 = [
    "Price": 35590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HEPATOCANFORTE60COMPRIMIDOS.png?v=1666096383"
  },
  {
@@ -1229,7 +1205,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY5377015.jpg?v=1662407746"
  },
  {
@@ -1242,7 +1218,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY5376015.jpg?v=1662407546"
  },
  {
@@ -1255,7 +1231,7 @@ payload2 = [
    "Price": 33190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HIL61007000.jpg?v=1662407690"
  },
  {
@@ -1268,7 +1244,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY3653015_3bee94cd-0d34-4e93-8df4-037c7b229891.jpg?v=1626117780"
  },
  {
@@ -1281,7 +1257,7 @@ payload2 = [
    "Price": 4290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ALIMENTOHUMEDOFELINOROYALCANINGASTROHIGHENERGYLATA145GR.png?v=1661727592"
  },
  {
@@ -1294,7 +1270,7 @@ payload2 = [
    "Price": 25590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/VTQALCKI135.jpg?v=1662400992"
  },
  {
@@ -1307,7 +1283,7 @@ payload2 = [
    "Price": 1290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/MEBERMIC1COMP..png?v=1662066400"
  },
  {
@@ -1320,7 +1296,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/VTQALCKI136.jpg?v=1662400992"
  },
  {
@@ -1333,7 +1309,7 @@ payload2 = [
    "Price": 111190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/pack2.png?v=1660767013"
  },
  {
@@ -1346,7 +1322,7 @@ payload2 = [
    "Price": 104690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/pack3.png?v=1660767098"
  },
  {
@@ -1359,7 +1335,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ADAPTILCOLLARPERROb.png?v=1662500975"
  },
  {
@@ -1372,7 +1348,7 @@ payload2 = [
    "Price": 96090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/pack1.png?v=1660767072"
  },
  {
@@ -1385,7 +1361,7 @@ payload2 = [
    "Price": 19390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ADAPTILCOLLARPERROa.png?v=1662500975"
  },
  {
@@ -1398,7 +1374,7 @@ payload2 = [
    "Price": 42990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/SILIMARINA-1.png?v=1660148107"
  },
  {
@@ -1411,7 +1387,7 @@ payload2 = [
    "Price": 12790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HEMOLITANPERROSYGATOS60.png?v=1666100392"
  },
  {
@@ -1424,7 +1400,7 @@ payload2 = [
    "Price": 19190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/otiflex_1_1.jpg?v=1660254598"
  },
  {
@@ -1437,7 +1413,7 @@ payload2 = [
    "Price": 14890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/GLICOPANPERROSYGATOS125.png?v=1666100333"
  },
  {
@@ -1450,7 +1426,7 @@ payload2 = [
    "Price": 29890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CERENIA60mgx4comp.png?v=1661734250"
  },
  {
@@ -1463,7 +1439,7 @@ payload2 = [
    "Price": 8490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DIPRAMIDA0_5_SOL.ORAL20ml.png?v=1661734294"
  },
  {
@@ -1476,7 +1452,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DERMISOLONASUSPENSIONORAL.png?v=1661733016"
  },
  {
@@ -1489,7 +1465,7 @@ payload2 = [
    "Price": 24790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Capturadepantalla2022-11-29ala_s_11.18.31.png?v=1669731541"
  },
  {
@@ -1502,7 +1478,7 @@ payload2 = [
    "Price": 13890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/TRANSIMEDSUSPENSION15ML.png?v=1662652588"
  },
  {
@@ -1515,7 +1491,7 @@ payload2 = [
    "Price": 11890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PETOTIC100ML.png?v=1662652624"
  },
  {
@@ -1528,7 +1504,7 @@ payload2 = [
    "Price": 20190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ITRASKINSUSPENSION120ML.png?v=1661733188"
  },
  {
@@ -1541,7 +1517,7 @@ payload2 = [
    "Price": 12890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -1554,7 +1530,7 @@ payload2 = [
    "Price": 26690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CLINDABONE165mgX20COMP.png?v=1662652383"
  },
  {
@@ -1567,7 +1543,7 @@ payload2 = [
    "Price": 5590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY00044785.png?v=1662406908"
  },
  {
@@ -1580,7 +1556,7 @@ payload2 = [
    "Price": 10690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HASYUNCOMPx10.png?v=1661733047"
  },
  {
@@ -1593,7 +1569,7 @@ payload2 = [
    "Price": 18190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/MELOXIVETSOLUCIONORAL60ml.png?v=1661732833"
  },
  {
@@ -1606,7 +1582,7 @@ payload2 = [
    "Price": 20490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Sucravet-600x600.png?v=1662557352"
  },
  {
@@ -1619,7 +1595,7 @@ payload2 = [
    "Price": 58990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRITCARECATGFSTERILIZEDWEIGHTCONTROL7_5KG.png?v=1666639955"
  },
  {
@@ -1632,7 +1608,7 @@ payload2 = [
    "Price": 21990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/weightloss3.png?v=1686776088"
  },
  {
@@ -1645,7 +1621,7 @@ payload2 = [
    "Price": 71990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/weightloss12.png?v=1686776088"
  },
  {
@@ -1658,7 +1634,7 @@ payload2 = [
    "Price": 21990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRITCARESENIOR-LAMB_RICE12kg.png?v=1669725796"
  },
  {
@@ -1671,7 +1647,7 @@ payload2 = [
    "Price": 66990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRITCARESENIOR-LAMB_RICE3kg.png?v=1669725796"
  },
  {
@@ -1684,7 +1660,7 @@ payload2 = [
    "Price": 22990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/3kg_Hypo_Puppy.png?v=1686936593"
  },
  {
@@ -1697,7 +1673,7 @@ payload2 = [
    "Price": 69990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/12kgpuppylamb_1.png?v=1686936593"
  },
  {
@@ -1710,7 +1686,7 @@ payload2 = [
    "Price": 22990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/seniorlight3.png?v=1686936456"
  },
  {
@@ -1723,7 +1699,7 @@ payload2 = [
    "Price": 69990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/seniorlightsalmon.png?v=1686936456"
  },
  {
@@ -1736,7 +1712,7 @@ payload2 = [
    "Price": 22990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/puppysalmon12.png?v=1686936313"
  },
  {
@@ -1749,7 +1725,7 @@ payload2 = [
    "Price": 72990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/puppy3.png?v=1686936313"
  },
  {
@@ -1762,7 +1738,7 @@ payload2 = [
    "Price": 21990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/Brit_Adulto_3.png?v=1686775469"
  },
  {
@@ -1775,7 +1751,7 @@ payload2 = [
    "Price": 69990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/Brit_Adulto_12.png?v=1686775462"
  },
  {
@@ -1788,7 +1764,7 @@ payload2 = [
    "Price": 18490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -1801,7 +1777,7 @@ payload2 = [
    "Price": 18490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -1814,7 +1790,7 @@ payload2 = [
    "Price": 18490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -1827,7 +1803,7 @@ payload2 = [
    "Price": 21990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRITCAREADULTSMALLBREED-LAMB_RICE7.5kg.png?v=1661527311"
  },
  {
@@ -1840,7 +1816,7 @@ payload2 = [
    "Price": 48990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRITCAREADULTSMALLBREED-LAMB_RICE3kg.png?v=1661527311"
  },
  {
@@ -1853,7 +1829,7 @@ payload2 = [
    "Price": 21990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/adultmediumlamb3.png?v=1686936395"
  },
  {
@@ -1866,7 +1842,7 @@ payload2 = [
    "Price": 67990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/lambadultmedium12.png?v=1686936408"
  },
  {
@@ -1879,7 +1855,7 @@ payload2 = [
    "Price": 7490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BIOBAGS16ROLLOSBOLSASOXOBIODEGRADABLES.png?v=1663199637"
  },
  {
@@ -1892,7 +1868,7 @@ payload2 = [
    "Price": 6690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/1002512.png?v=1656531189"
  },
  {
@@ -1905,7 +1881,7 @@ payload2 = [
    "Price": 4790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/1000897.png?v=1656531107"
  },
  {
@@ -1918,7 +1894,7 @@ payload2 = [
    "Price": 9090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/1000775.jpg?v=1656530915"
  },
  {
@@ -1931,7 +1907,7 @@ payload2 = [
    "Price": 3690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/1000774.png?v=1656530864"
  },
  {
@@ -1944,7 +1920,7 @@ payload2 = [
    "Price": 19190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ADAPTILREPUESTO.48ml.png?v=1662501090"
  },
  {
@@ -1957,7 +1933,7 @@ payload2 = [
    "Price": 4290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BIOBAGSDISPENSADORDEECOBOLSAS.png?v=1663199671"
  },
  {
@@ -1970,7 +1946,7 @@ payload2 = [
    "Price": 3690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -1983,7 +1959,7 @@ payload2 = [
    "Price": 3690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -1996,7 +1972,7 @@ payload2 = [
    "Price": 2490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/LEONARDOLATASQUALITYSELECCIONKITTEN.png?v=1661728233"
  },
  {
@@ -2009,7 +1985,7 @@ payload2 = [
    "Price": 2690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/LEONARDOLATASQUALITYSELECCIONPESCADO.png?v=1661728179"
  },
  {
@@ -2022,7 +1998,7 @@ payload2 = [
    "Price": 71690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Mesadetrabajo28.png?v=1678980113"
  },
  {
@@ -2035,7 +2011,7 @@ payload2 = [
    "Price": 3290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELINOURINARYSACHET85GRX1UN.png?v=1661728341"
  },
  {
@@ -2048,7 +2024,7 @@ payload2 = [
    "Price": 2590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELINORENALSACHET85GRX1UN.png?v=1661727645"
  },
  {
@@ -2061,7 +2037,7 @@ payload2 = [
    "Price": 3290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELINOGASTROINTESTINALSACHET85GRX1UN.png?v=1661727684"
  },
  {
@@ -2074,7 +2050,7 @@ payload2 = [
    "Price": 67190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ACANAPUPPY_JUNIOR-PERRO12KG.png?v=1669725581"
  },
  {
@@ -2087,7 +2063,7 @@ payload2 = [
    "Price": 17090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Odour-buster-9kg.jpg?v=1654531531"
  },
  {
@@ -2100,7 +2076,7 @@ payload2 = [
    "Price": 18190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/1_cfa11f7e-bc9b-405d-a8d1-09a5ba9e30c4.png?v=1687976228"
  },
  {
@@ -2113,7 +2089,7 @@ payload2 = [
    "Price": 18190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/CapturadePantalla2023-07-12ala_s_16.38.32.png?v=1689194413"
  },
  {
@@ -2126,7 +2102,7 @@ payload2 = [
    "Price": 10690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/2_0b6bf8e3-b6ab-49b3-bc4c-5c22d4493554.png?v=1687976228"
  },
  {
@@ -2139,7 +2115,7 @@ payload2 = [
    "Price": 10990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DOXIMICINJARABE60ml.png?v=1662652446"
  },
  {
@@ -2152,7 +2128,7 @@ payload2 = [
    "Price": 13990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DOXIMICINCOMPx10.png?v=1662652417"
  },
  {
@@ -2165,7 +2141,7 @@ payload2 = [
    "Price": 16990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/OHM-MODULADORDEANSIEDADPERROSYGATOS.png?v=1662499060"
  },
  {
@@ -2178,7 +2154,7 @@ payload2 = [
    "Price": 47090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/acanabountifulcatchgato.png?v=1678800425"
  },
  {
@@ -2191,7 +2167,7 @@ payload2 = [
    "Price": 21890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2204,7 +2180,7 @@ payload2 = [
    "Price": 7290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/B-DAT3010-35G.jpg?v=1650565316"
  },
  {
@@ -2217,7 +2193,7 @@ payload2 = [
    "Price": 40190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/APOQUEL5_4MG20COMP.png?v=1662067809"
  },
  {
@@ -2230,7 +2206,7 @@ payload2 = [
    "Price": 37990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/APOQUEL3_6MG20COMP.png?v=1662067954"
  },
  {
@@ -2243,7 +2219,7 @@ payload2 = [
    "Price": 46990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/APOQUEL16MG20COMP.png?v=1662067981"
  },
  {
@@ -2256,7 +2232,7 @@ payload2 = [
    "Price": 13890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/GASTROENTERILSUSPORAL120ml.png?v=1661734084"
  },
  {
@@ -2269,7 +2245,7 @@ payload2 = [
    "Price": 25590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/VEGABFAD3207.jpg?v=1650556696"
  },
  {
@@ -2282,7 +2258,7 @@ payload2 = [
    "Price": 76990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CANINEADULTMETABOLIC7.98KG.png?v=1661553878"
  },
  {
@@ -2295,7 +2271,7 @@ payload2 = [
    "Price": 24490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CANINEADULT7_SMALLBITES.png?v=1661553801"
  },
  {
@@ -2308,7 +2284,7 @@ payload2 = [
    "Price": 59790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2321,7 +2297,7 @@ payload2 = [
    "Price": 88790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2334,7 +2310,7 @@ payload2 = [
    "Price": 59390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2347,7 +2323,7 @@ payload2 = [
    "Price": 69490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2360,7 +2336,7 @@ payload2 = [
    "Price": 42390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2373,7 +2349,7 @@ payload2 = [
    "Price": 20390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Mesadetrabajo33.png?v=1678980142"
  },
  {
@@ -2386,7 +2362,7 @@ payload2 = [
    "Price": 58290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2399,7 +2375,7 @@ payload2 = [
    "Price": 38490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2412,7 +2388,7 @@ payload2 = [
    "Price": 17690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Acanaclassicwildcoastperro_7a2a8d0f-d1f0-4a14-9107-85a32b0ce58d.png?v=1678800465"
  },
  {
@@ -2425,7 +2401,7 @@ payload2 = [
    "Price": 57790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/AcanaClassicPrairiePoultryPerro_ed7c008d-02eb-4559-8561-c90b99603c65.png?v=1678800443"
  },
  {
@@ -2438,7 +2414,7 @@ payload2 = [
    "Price": 38990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2451,7 +2427,7 @@ payload2 = [
    "Price": 18790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2464,7 +2440,7 @@ payload2 = [
    "Price": 49990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2477,7 +2453,7 @@ payload2 = [
    "Price": 25590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/AcanaMeadowlandgati.png?v=1678801493"
  },
  {
@@ -2490,7 +2466,7 @@ payload2 = [
    "Price": 54790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2503,7 +2479,7 @@ payload2 = [
    "Price": 29790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Acanawildatlanticgato.png?v=1678802090"
  },
  {
@@ -2516,7 +2492,7 @@ payload2 = [
    "Price": 10690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/VTQMALPA034.png?v=1646060995"
  },
  {
@@ -2529,7 +2505,7 @@ payload2 = [
    "Price": 10690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BEAPHARGELCUIDADODENTAL100gr.png?v=1663094420"
  },
  {
@@ -2542,7 +2518,7 @@ payload2 = [
    "Price": 10690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BEAPHARCEPILLODENTALDOBLEMANGO.png?v=1663094968"
  },
  {
@@ -2555,7 +2531,7 @@ payload2 = [
    "Price": 10690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BEAPHARPASTADENTAL100g.png?v=1663094388"
  },
  {
@@ -2568,7 +2544,7 @@ payload2 = [
    "Price": 10690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FLORAFIXPET.png?v=1661734037"
  },
  {
@@ -2581,7 +2557,7 @@ payload2 = [
    "Price": 17090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BAYADVPE045_1.jpg?v=1669743304"
  },
  {
@@ -2594,7 +2570,7 @@ payload2 = [
    "Price": 14490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ADVOCATEGATOSa.png?v=1669743051"
  },
  {
@@ -2607,7 +2583,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ADVOCATEGATOSb_e24c03ba-13ae-4c51-b6ff-f08ea71d78f0.png?v=1669741893"
  },
  {
@@ -2620,7 +2596,7 @@ payload2 = [
    "Price": 3490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/WanpyChicken-Polloparagatos.png?v=1666045975"
  },
  {
@@ -2633,7 +2609,7 @@ payload2 = [
    "Price": 3490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/WanpyDuck-Carnedepatoparagatos.png?v=1666046079"
  },
  {
@@ -2646,7 +2622,7 @@ payload2 = [
    "Price": 3990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/WanpyToothbrush-Cuidadooral.png?v=1666046194"
  },
  {
@@ -2659,7 +2635,7 @@ payload2 = [
    "Price": 4290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/WanpyBeef-CarnedeVacuno.png?v=1666045933"
  },
  {
@@ -2672,7 +2648,7 @@ payload2 = [
    "Price": 5290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/WanpySalmon_FishSkin-CarnedeSalmon.png?v=1666046165"
  },
  {
@@ -2685,7 +2661,7 @@ payload2 = [
    "Price": 5148,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/WanpyVenison-CarnedeVenado.png?v=1666046222"
  },
  {
@@ -2698,7 +2674,7 @@ payload2 = [
    "Price": 5148,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/WanpyDuck-Carnedepato.png?v=1666046006"
  },
  {
@@ -2711,7 +2687,7 @@ payload2 = [
    "Price": 5148,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/WanpyLamb-Carnedecordero.png?v=1666046126"
  },
  {
@@ -2724,7 +2700,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PEDEROLAEROSOL.png?v=1662068010"
  },
  {
@@ -2737,7 +2713,7 @@ payload2 = [
    "Price": 11790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -2750,7 +2726,7 @@ payload2 = [
    "Price": 21990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FITFORMULASABANILLASCARBONACTIVADOXL3OUNID.80X60.png?v=1663093554"
  },
  {
@@ -2763,7 +2739,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/royal-canin-kitten7853.jpg?v=1661187271"
  },
  {
@@ -2776,7 +2752,7 @@ payload2 = [
    "Price": 37290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ADAPTILDIFUSOR_RPTO.48Ml.png?v=1662501128"
  },
  {
@@ -2789,7 +2765,7 @@ payload2 = [
    "Price": 24790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELIWAYFRIENDSREPUESTO.png?v=1662498979"
  },
  {
@@ -2802,7 +2778,7 @@ payload2 = [
    "Price": 24790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELIWAYCLASSICREPUESTO48ML.png?v=1662498819"
  },
  {
@@ -2815,7 +2791,7 @@ payload2 = [
    "Price": 25590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELIWAYSPRAY.png?v=1662499174"
  },
  {
@@ -2828,7 +2804,7 @@ payload2 = [
    "Price": 25590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY5801015.jpg?v=1623338248"
  },
  {
@@ -2841,7 +2817,7 @@ payload2 = [
    "Price": 38390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELIWAYCLASSICDIFUSOR_REPUESTO48ML.png?v=1662498794"
  },
  {
@@ -2854,7 +2830,7 @@ payload2 = [
    "Price": 19190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY5101105_085b8f7e-47a8-47d0-813a-b2061ea0696d.jpg?v=1623278392"
  },
  {
@@ -2867,7 +2843,7 @@ payload2 = [
    "Price": 38390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELIWAYFRIENDSDIFUSOR_REPUESTO.48ml.png?v=1662498953"
  },
  {
@@ -2880,7 +2856,7 @@ payload2 = [
    "Price": 22390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY3673015_fdba74fc-e2ce-449b-9d0f-a3cd09396ba4.jpg?v=1623278375"
  },
  {
@@ -2893,7 +2869,7 @@ payload2 = [
    "Price": 8190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CEVCORAL023.png?v=1625496825"
  },
  {
@@ -2906,7 +2882,7 @@ payload2 = [
    "Price": 10290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CEVCORAL022.png?v=1625496825"
  },
  {
@@ -2919,7 +2895,7 @@ payload2 = [
    "Price": 9190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/unnamed.png?v=1626125099"
  },
  {
@@ -2932,7 +2908,7 @@ payload2 = [
    "Price": 14390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/REVOLUTIONPLUSGATOSc_f78455a2-e023-464a-acce-69c709b68099.png?v=1669741333"
  },
  {
@@ -2945,7 +2921,7 @@ payload2 = [
    "Price": 12390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/REVOLUTIONPLUSGATOSb.png?v=1669741480"
  },
  {
@@ -2958,7 +2934,7 @@ payload2 = [
    "Price": 25590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PROMAS00006.jpg?v=1625071035"
  },
  {
@@ -2971,7 +2947,7 @@ payload2 = [
    "Price": 37290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ARTRITABS60COMP.png?v=1666096415"
  },
  {
@@ -2984,7 +2960,7 @@ payload2 = [
    "Price": 3190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CATNIPECOTRAPER15GR.png?v=1662498925"
  },
  {
@@ -2997,7 +2973,7 @@ payload2 = [
    "Price": 15490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/zeropelo1_af397193-57b4-4ede-af01-d4894c1226fd.png?v=1668795637"
  },
  {
@@ -3010,7 +2986,7 @@ payload2 = [
    "Price": 16490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/america-litter-ultra-odor-seal_439afc0f-cc25-445a-9277-7e7dc7e51e23.jpg?v=1649085457"
  },
  {
@@ -3023,7 +2999,7 @@ payload2 = [
    "Price": 16490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/America-Litter-de-Lavanda.jpg?v=1623422904"
  },
  {
@@ -3036,7 +3012,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/america-litter-dust-free.jpg?v=1623422629"
  },
  {
@@ -3049,7 +3025,7 @@ payload2 = [
    "Price": 26690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -3062,7 +3038,7 @@ payload2 = [
    "Price": 27690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -3075,7 +3051,7 @@ payload2 = [
    "Price": 7490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ciao-dog-churu-chicken2.jpg?v=1645016807"
  },
  {
@@ -3088,7 +3064,7 @@ payload2 = [
    "Price": 7390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ciao-dog-churu-chicken-with-tuna2.jpg?v=1644951853"
  },
  {
@@ -3101,7 +3077,7 @@ payload2 = [
    "Price": 7390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/inaba-churu-snack-perro-sabor-pollo-salmon-8-tubos-de-20-g-160g.jpg?v=1645017805"
  },
  {
@@ -3114,7 +3090,7 @@ payload2 = [
    "Price": 7390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ciao-dog-churu-chicken-with-cheese_3.jpg?v=1645016966"
  },
  {
@@ -3127,7 +3103,7 @@ payload2 = [
    "Price": 3790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CHURUGATOTUNA.png?v=1663181759"
  },
  {
@@ -3140,7 +3116,7 @@ payload2 = [
    "Price": 3790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CHURUGATOTUNA_SCALLOP.png?v=1663181883"
  },
  {
@@ -3153,7 +3129,7 @@ payload2 = [
    "Price": 3890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CHURUGATOCHICKEN.png?v=1663181683"
  },
  {
@@ -3166,7 +3142,7 @@ payload2 = [
    "Price": 3790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CHURUGATOTUNA_SALMON.png?v=1663181832"
  },
  {
@@ -3179,7 +3155,7 @@ payload2 = [
    "Price": 3190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CHURUGATOCHICKENWITHSHRIMP.png?v=1663181724"
  },
  {
@@ -3192,7 +3168,7 @@ payload2 = [
    "Price": 3190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CHURUGATOTUNA_CHICKEN.png?v=1663181797"
  },
  {
@@ -3205,7 +3181,7 @@ payload2 = [
    "Price": 37390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRAVECTOGATOb_5e548820-b39e-42e8-848e-71a1c3667f29.png?v=1669738009"
  },
  {
@@ -3218,7 +3194,7 @@ payload2 = [
    "Price": 37390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRAVECTOGATOc_8c2354c7-2e33-4487-b28b-5f48f0b45da1.png?v=1669738068"
  },
  {
@@ -3231,7 +3207,7 @@ payload2 = [
    "Price": 40590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BRAVECTOGATOd_59619e87-b50e-4ee2-be6f-adf3893d67d7.png?v=1669739696"
  },
  {
@@ -3244,7 +3220,7 @@ payload2 = [
    "Price": 25990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HILLSCANINEADULTODERAZASPEQUENAS2.04KG.png?v=1661560962"
  },
  {
@@ -3257,7 +3233,7 @@ payload2 = [
    "Price": 24490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HILLSCANINEMATURERAZASTOY2.04KG.png?v=1661560827"
  },
  {
@@ -3270,7 +3246,7 @@ payload2 = [
    "Price": 21190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HILLSCANINEADULTOSMALLBITES2.26KG.png?v=1661553838"
  },
  {
@@ -3283,7 +3259,7 @@ payload2 = [
    "Price": 23490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HILLSCANINEADULTOLIGHTSMALLBITES2.26KG.png?v=1661554287"
  },
  {
@@ -3296,7 +3272,7 @@ payload2 = [
    "Price": 25590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/HILL21002057_ddedf619-aa6c-466f-819f-9a79ceb1593e.jpg?v=1623278682"
  },
  {
@@ -3309,7 +3285,7 @@ payload2 = [
    "Price": 28990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FITFORMULASENIORRAZASPEQUENAS10KG.png?v=1661530367"
  },
  {
@@ -3322,7 +3298,7 @@ payload2 = [
    "Price": 29990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/fit-formula-gato.jpg?v=1624651467"
  },
  {
@@ -3335,7 +3311,7 @@ payload2 = [
    "Price": 26090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ALIMENTOFITFORMULAADULTORAZASPEQUENAS10KG.png?v=1661529747"
  },
  {
@@ -3348,7 +3324,7 @@ payload2 = [
    "Price": 28990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FITFORMULACACHORRO10KG.png?v=1661529990"
  },
  {
@@ -3361,7 +3337,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DPHFIT00450.png?v=1669036787"
  },
  {
@@ -3374,7 +3350,7 @@ payload2 = [
    "Price": 2190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/LATAFIT-CACHORROPOLLO280GR.png?v=1667566003"
  },
  {
@@ -3387,7 +3363,7 @@ payload2 = [
    "Price": 2190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/LATAFIT-POLLO280GR.png?v=1667566082"
  },
  {
@@ -3400,7 +3376,7 @@ payload2 = [
    "Price": 2190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/LATAFIT-CARNE280GR.png?v=1667566038"
  },
  {
@@ -3413,7 +3389,7 @@ payload2 = [
    "Price": 2190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/LATAFITGATOPOLLO.png?v=1667566139"
  },
  {
@@ -3426,7 +3402,7 @@ payload2 = [
    "Price": 35290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Simparica803.png?v=1659029607"
  },
  {
@@ -3439,7 +3415,7 @@ payload2 = [
    "Price": 19990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Simparica801.png?v=1659029607"
  },
  {
@@ -3452,7 +3428,7 @@ payload2 = [
    "Price": 16990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Simparica53.png?v=1659029407"
  },
  {
@@ -3465,7 +3441,7 @@ payload2 = [
    "Price": 8190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Simparica51.png?v=1659029407"
  },
  {
@@ -3478,7 +3454,7 @@ payload2 = [
    "Price": 24390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Simparica403.png?v=1659029548"
  },
  {
@@ -3491,7 +3467,7 @@ payload2 = [
    "Price": 12390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Simparica401.png?v=1659029548"
  },
  {
@@ -3504,7 +3480,7 @@ payload2 = [
    "Price": 20490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Simparica203.png?v=1659029688"
  },
  {
@@ -3517,7 +3493,7 @@ payload2 = [
    "Price": 10290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/simparica201.png?v=1659029688"
  },
  {
@@ -3530,7 +3506,7 @@ payload2 = [
    "Price": 39390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/simparica1203.png?v=1659029641"
  },
  {
@@ -3543,7 +3519,7 @@ payload2 = [
    "Price": 17590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/simparica1201.png?v=1659029641"
  },
  {
@@ -3556,7 +3532,7 @@ payload2 = [
    "Price": 19290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Simparica103.png?v=1659029576"
  },
  {
@@ -3569,7 +3545,7 @@ payload2 = [
    "Price": 8890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Simparica101.png?v=1659029576"
  },
  {
@@ -3582,7 +3558,7 @@ payload2 = [
    "Price": 13390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/synulox3683.jpg?v=1664999942"
  },
  {
@@ -3595,7 +3571,7 @@ payload2 = [
    "Price": 17090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/RIMADYL25MG14COMPRIMIDOS.png?v=1661732668"
  },
  {
@@ -3608,7 +3584,7 @@ payload2 = [
    "Price": 68490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/RIMADYL100MG_VARIEDADES_b.png?v=1661732707"
  },
  {
@@ -3621,7 +3597,7 @@ payload2 = [
    "Price": 24490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/RIMADYL100MG_VARIEDADES_a.png?v=1661732707"
  },
  {
@@ -3634,7 +3610,7 @@ payload2 = [
    "Price": 13890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/REVOLUTIONPERROYGATO6_-0_25ML_HASTA2_5KG.png?v=1662066434"
  },
  {
@@ -3647,7 +3623,7 @@ payload2 = [
    "Price": 26890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PFIREVPI030_c102c20f-b61b-44e0-962b-4212ed17db02.png?v=1656533685"
  },
  {
@@ -3660,7 +3636,7 @@ payload2 = [
    "Price": 17590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PFIREVPI022_c4fef69d-9891-4568-a28b-38b23eee0f0e.png?v=1656533550"
  },
  {
@@ -3673,7 +3649,7 @@ payload2 = [
    "Price": 18190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PFIREVPI021_ae59f0ae-80cf-44b3-8434-552aea5d5a25.png?v=1656533336"
  },
  {
@@ -3686,7 +3662,7 @@ payload2 = [
    "Price": 17090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PFIREVPI020_3d636ebd-b45a-4b4d-becf-92e02a04cdfd.png?v=1656533221"
  },
  {
@@ -3699,7 +3675,7 @@ payload2 = [
    "Price": 17090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/REVOLUTIONGATO6_0_75ML_2.5KG-7.5KG.png?v=1662066462"
  },
  {
@@ -3712,7 +3688,7 @@ payload2 = [
    "Price": 13790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/SPRAYALIENTOFRESCOPYG150ML.png?v=1663094476"
  },
  {
@@ -3725,7 +3701,7 @@ payload2 = [
    "Price": 13890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BEAPHAROFTALLIMPIADORDELAGRIMAS50ML.png?v=1661734852"
  },
  {
@@ -3738,7 +3714,7 @@ payload2 = [
    "Price": 14390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/VTQLAVTA011.jpg?v=1669036989"
  },
  {
@@ -3751,7 +3727,7 @@ payload2 = [
    "Price": 14890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/VTQLAVCA010.jpg?v=1669036963"
  },
  {
@@ -3764,7 +3740,7 @@ payload2 = [
    "Price": 5090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CALMINGTREATSGATO.png?v=1662499089"
  },
  {
@@ -3777,7 +3753,7 @@ payload2 = [
    "Price": 14390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CALMINGTABLETA.png?v=1662499291"
  },
  {
@@ -3790,7 +3766,7 @@ payload2 = [
    "Price": 16290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CALMINGSPRAY.png?v=1662498860"
  },
  {
@@ -3803,7 +3779,7 @@ payload2 = [
    "Price": 16790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/12047634_1.jpg?v=1623966479"
  },
  {
@@ -3816,7 +3792,7 @@ payload2 = [
    "Price": 16790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CALMINGSPOTON-GATOS3PIPETAS.png?v=1662499146"
  },
  {
@@ -3829,7 +3805,7 @@ payload2 = [
    "Price": 15490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CALMINGCOLLAR-GATO.png?v=1662499262"
  },
  {
@@ -3842,7 +3818,7 @@ payload2 = [
    "Price": 15490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CALMINGCOLLAR-PERRO.png?v=1662501195"
  },
  {
@@ -3855,7 +3831,7 @@ payload2 = [
    "Price": 23490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROYALCANINCANINORENAL1.5KG.png?v=1661531606"
  },
  {
@@ -3868,7 +3844,7 @@ payload2 = [
    "Price": 25590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -3881,7 +3857,7 @@ payload2 = [
    "Price": 11690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROYALCANINCANINOMINIPUPPY.png?v=1661530631"
  },
  {
@@ -3894,7 +3870,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -3907,7 +3883,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/product_template_1650.jpg?v=1661187311"
  },
  {
@@ -3920,7 +3896,7 @@ payload2 = [
    "Price": 36390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROYALCANINCANINOHYPOALLERGENIC2KG.png?v=1661531583"
  },
  {
@@ -3933,7 +3909,7 @@ payload2 = [
    "Price": 19190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY5600015_77624a58-ddfe-48ec-969a-b010c460596e.jpg?v=1623278383"
  },
  {
@@ -3946,7 +3922,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROY3653015_3bee94cd-0d34-4e93-8df4-037c7b229891.jpg?v=1626117780"
  },
  {
@@ -3959,7 +3935,7 @@ payload2 = [
    "Price": 41690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/bravecto3_4600e170-3cc3-4024-908b-1b61cd785bfe.png?v=1669739708"
  },
  {
@@ -3972,7 +3948,7 @@ payload2 = [
    "Price": 38490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/bravecto2_69b06179-1438-4f97-8067-fc0f64e867e7.png?v=1669739480"
  },
  {
@@ -3985,7 +3961,7 @@ payload2 = [
    "Price": 35290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/bravecto1_1.png?v=1669739386"
  },
  {
@@ -3998,7 +3974,7 @@ payload2 = [
    "Price": 64090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/bravecto5_1.png?v=1669740205"
  },
  {
@@ -4011,7 +3987,7 @@ payload2 = [
    "Price": 57790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/bravecto4_1d2db230-6a6e-4867-99bd-14e03514d31a.png?v=1669739874"
  },
  {
@@ -4024,7 +4000,7 @@ payload2 = [
    "Price": 19190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4037,7 +4013,7 @@ payload2 = [
    "Price": 19190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4050,7 +4026,7 @@ payload2 = [
    "Price": 18090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4063,7 +4039,7 @@ payload2 = [
    "Price": 18090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4076,7 +4052,7 @@ payload2 = [
    "Price": 18090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4089,7 +4065,7 @@ payload2 = [
    "Price": 14490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4102,7 +4078,7 @@ payload2 = [
    "Price": 14490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/Imagenesproductosweb_85bb014f-6bff-44d8-827a-6ccf2ef38ebc.png?v=1689280581"
  },
  {
@@ -4115,7 +4091,7 @@ payload2 = [
    "Price": 14490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/capturadepantalla2021-07-09ala-s-23-39-148396.png?v=1689280581"
  },
  {
@@ -4128,7 +4104,7 @@ payload2 = [
    "Price": 20190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4141,7 +4117,7 @@ payload2 = [
    "Price": 20190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4154,7 +4130,7 @@ payload2 = [
    "Price": 20190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4167,7 +4143,7 @@ payload2 = [
    "Price": 19190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4180,7 +4156,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BODDY-DE-COBRE-COPPER-PROTECTION-MEDIDAS.jpg?v=1689280581"
  },
  {
@@ -4193,7 +4169,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/2_2451048e-be53-4b1d-92b7-a88f6d6ea447.png?v=1689280581"
  },
  {
@@ -4206,7 +4182,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/bodys.jpg?v=1689280581"
  },
  {
@@ -4219,7 +4195,7 @@ payload2 = [
    "Price": 7490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/superpetsenior.png?v=1660247609"
  },
  {
@@ -4232,7 +4208,7 @@ payload2 = [
    "Price": 7490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/superpetpuppi.png?v=1660247609"
  },
  {
@@ -4245,7 +4221,7 @@ payload2 = [
    "Price": 7490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/superpetadulto.png?v=1660247609"
  },
  {
@@ -4258,7 +4234,7 @@ payload2 = [
    "Price": 7490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/supetpetgato.png?v=1660247233"
  },
  {
@@ -4271,7 +4247,7 @@ payload2 = [
    "Price": 10190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Mesadetrabajo37.png?v=1660136712"
  },
  {
@@ -4284,7 +4260,7 @@ payload2 = [
    "Price": 11190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/skindragavena.png?v=1660255151"
  },
  {
@@ -4297,7 +4273,7 @@ payload2 = [
    "Price": 19190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/SILIMADRAG-SUSPENSIONORAL120ML.png?v=1666100115"
  },
  {
@@ -4310,7 +4286,7 @@ payload2 = [
    "Price": 12790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DPHMASSE242.png?v=1662412514"
  },
  {
@@ -4323,7 +4299,7 @@ payload2 = [
    "Price": 21390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DPHMASSE247.png?v=1662412424"
  },
  {
@@ -4336,7 +4312,7 @@ payload2 = [
    "Price": 9490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ROSTRUM50MGX10COMP.png?v=1662652554"
  },
  {
@@ -4349,7 +4325,7 @@ payload2 = [
    "Price": 20590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DPHMASRO101.jpg?v=1653425212"
  },
  {
@@ -4362,7 +4338,7 @@ payload2 = [
    "Price": 13890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/REGEPIPELPLUS150ML.png?v=1662067694"
  },
  {
@@ -4375,7 +4351,7 @@ payload2 = [
    "Price": 13590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PETEVER-SHAMPOO150ML.png?v=1662067722"
  },
  {
@@ -4388,7 +4364,7 @@ payload2 = [
    "Price": 13890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PETEVER-ORALPLUSSPRAY100ML.png?v=1663094910"
  },
  {
@@ -4401,7 +4377,7 @@ payload2 = [
    "Price": 11990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PAZPET-SUSPENSIONORAL60ML.png?v=1662501340"
  },
  {
@@ -4414,7 +4390,7 @@ payload2 = [
    "Price": 11980,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PAPAINPET30COMP.png?v=1666097211"
  },
  {
@@ -4427,7 +4403,7 @@ payload2 = [
    "Price": 9590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PACIFORGOTAS10ml.png?v=1662499201"
  },
  {
@@ -4440,7 +4416,7 @@ payload2 = [
    "Price": 13890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/PACIFORCOMPx10.png?v=1662499236"
  },
  {
@@ -4453,7 +4429,7 @@ payload2 = [
    "Price": 8090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/NAXPET-0.4_SUSPENSIONORAL20ML.png?v=1661732918"
  },
  {
@@ -4466,7 +4442,7 @@ payload2 = [
    "Price": 20190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/MIXANTIPPLUS-CREMAb.png?v=1662067910"
  },
  {
@@ -4479,7 +4455,7 @@ payload2 = [
    "Price": 11690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/MIXANTIPPLUS-CREMAa.png?v=1662067910"
  },
  {
@@ -4492,7 +4468,7 @@ payload2 = [
    "Price": 11690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/MATIPETPOMADA-50GR.png?v=1662067851"
  },
  {
@@ -4505,7 +4481,7 @@ payload2 = [
    "Price": 12790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4518,7 +4494,7 @@ payload2 = [
    "Price": 9090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DPHMASMA072_c1177469-5a3b-4243-a325-920b736b73f3.jpg?v=1623278578"
  },
  {
@@ -4531,7 +4507,7 @@ payload2 = [
    "Price": 10880,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DPHMASMA071_11ef19ca-f009-4512-9fb3-4bbef1789b26.jpg?v=1623278579"
  },
  {
@@ -4544,7 +4520,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/INMUNOPET60ML.png?v=1666097176"
  },
  {
@@ -4557,7 +4533,7 @@ payload2 = [
    "Price": 12790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/SHAMPOOFLT150ML.png?v=1662067762"
  },
  {
@@ -4570,7 +4546,7 @@ payload2 = [
    "Price": 11690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DOGUIVITSENIOR30COMPRIMIDOS.png?v=1666096506"
  },
  {
@@ -4583,7 +4559,7 @@ payload2 = [
    "Price": 9490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DOGUIVITCACHORRO60COMPRIMIDOS.png?v=1666096478"
  },
  {
@@ -4596,7 +4572,7 @@ payload2 = [
    "Price": 8490,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/DOGUIVITADULTO30COMPRIMIDOS.png?v=1666096448"
  },
  {
@@ -4609,7 +4585,7 @@ payload2 = [
    "Price": 26690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/CONDROVET-30COMP.png?v=1666097139"
  },
  {
@@ -4622,7 +4598,7 @@ payload2 = [
    "Price": 9190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BIOPOWER100GR.png?v=1666100161"
  },
  {
@@ -4635,7 +4611,7 @@ payload2 = [
    "Price": 3690,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/JERINGATABLETASGATO.png?v=1661745282"
  },
  {
@@ -4648,7 +4624,7 @@ payload2 = [
    "Price": 16990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/EHLNUTPE169.png?v=1662410527"
  },
  {
@@ -4661,7 +4637,7 @@ payload2 = [
    "Price": 16990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/EHLNUTGA168.png?v=1662410618"
  },
  {
@@ -4674,7 +4650,7 @@ payload2 = [
    "Price": 21290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/WhatsApp-Image-2023-01-17-at-12.00.41-PM.jpg?v=1676909618"
  },
  {
@@ -4687,7 +4663,7 @@ payload2 = [
    "Price": 45990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4700,7 +4676,7 @@ payload2 = [
    "Price": 14890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/NEXGARDSPECTRA7_6-15KG.png?v=1668521610"
  },
  {
@@ -4713,7 +4689,7 @@ payload2 = [
    "Price": 60990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4726,7 +4702,7 @@ payload2 = [
    "Price": 22790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/NexgardSpectra30_1-60Kg.png?v=1669657709"
  },
  {
@@ -4739,7 +4715,7 @@ payload2 = [
    "Price": 35190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4752,7 +4728,7 @@ payload2 = [
    "Price": 12790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/NEXGARDSPECTRA3_6-7_5KG.png?v=1669657429"
  },
  {
@@ -4765,7 +4741,7 @@ payload2 = [
    "Price": 33990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4778,7 +4754,7 @@ payload2 = [
    "Price": 12890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/NEXGARDSPECTRA2-3_5KG.png?v=1668521555"
  },
  {
@@ -4791,7 +4767,7 @@ payload2 = [
    "Price": 50290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/V100771farmina-vetlife-natural-canine-hypoallergenic_direito.png?v=1688082417"
  },
  {
@@ -4804,7 +4780,7 @@ payload2 = [
    "Price": 18090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/NEXGARDSPECTRA15_1-30KG.png?v=1668521530"
  },
  {
@@ -4817,7 +4793,7 @@ payload2 = [
    "Price": 10290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/files/drontalrazagrande_1.jpg?v=1688070545"
  },
  {
@@ -4830,7 +4806,7 @@ payload2 = [
    "Price": 9190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/BAY81408662.jpg?v=1688070602"
  },
  {
@@ -4843,7 +4819,7 @@ payload2 = [
    "Price": 14790,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ADVANTAGEGATOSa.png?v=1669746529"
  },
  {
@@ -4856,7 +4832,7 @@ payload2 = [
    "Price": 17990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ADVANTAGEGATOSb_6523f685-df81-44c7-bdf3-612997973282.png?v=1669746471"
  },
  {
@@ -4869,7 +4845,7 @@ payload2 = [
    "Price": 4190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ANAMAS00025_39aac398-03b2-4f62-badb-05fd878dc29b.jpg?v=1623278371"
  },
  {
@@ -4882,7 +4858,7 @@ payload2 = [
    "Price": 9190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/SABANILLASHIGIENICOYDEENTRENAMIENTOTRAPER14UN..png?v=1663093699"
  },
  {
@@ -4895,7 +4871,7 @@ payload2 = [
    "Price": 4590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/Snack-control-aliento-Anasac-40-g.jpg?v=1645114982"
  },
  {
@@ -4908,7 +4884,7 @@ payload2 = [
    "Price": 4390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ANAMAS00021.jpg?v=1625147571"
  },
  {
@@ -4921,7 +4897,7 @@ payload2 = [
    "Price": 4590,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ANAMAS00013_1cae0ca5-85ef-4d6f-b45e-2f972da98ee6.jpg?v=1623278491"
  },
  {
@@ -4934,7 +4910,7 @@ payload2 = [
    "Price": 4890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ANAMAS00042_6ea4afbe-86c7-4c96-92ae-72910310c229.jpg?v=1623278518"
  },
  {
@@ -4947,7 +4923,7 @@ payload2 = [
    "Price": 6290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ANAMAS00005.jpg?v=1625067484"
  },
  {
@@ -4960,7 +4936,7 @@ payload2 = [
    "Price": 2890,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/6-unid-Hueso-compacto-Anasac-blister.jpg?v=1644869491"
  },
  {
@@ -4973,7 +4949,7 @@ payload2 = [
    "Price": 2390,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/1265.jpg?v=1645115086"
  },
  {
@@ -4986,7 +4962,7 @@ payload2 = [
    "Price": 1990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELLINISALMONLIGHT85GR.png?v=1661727932"
  },
  {
@@ -4999,7 +4975,7 @@ payload2 = [
    "Price": 1990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELLINIPOLLOENSALSA85GR.png?v=1661727895"
  },
  {
@@ -5012,7 +4988,7 @@ payload2 = [
    "Price": 990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELLINIMIXATUNYSALMON85GR.png?v=1661727854"
  },
  {
@@ -5025,7 +5001,7 @@ payload2 = [
    "Price": 990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/FELLINICORDEROENSALSA85GR.png?v=1661727812"
  },
  {
@@ -5038,7 +5014,7 @@ payload2 = [
    "Price": 2090,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ANAMAS00041_cc7c0ce2-2159-4f95-8a09-820edfb440cb.jpg?v=1623278659"
  },
  {
@@ -5051,7 +5027,7 @@ payload2 = [
    "Price": 15990,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ANAMAS00004_5621e4a0-d722-49ef-8bcd-ae566adaa165.jpg?v=1623278407"
  },
  {
@@ -5064,7 +5040,7 @@ payload2 = [
    "Price": 8290,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/ARENA-SANITARIA-TRAPER-4-K.png?v=1652111221"
  },
  {
@@ -5077,17 +5053,7 @@ payload2 = [
    "Price": 19190,
    "Stock": "",
    "sale_type": "U",
-   "is_available": True,
+   "is_available": "\"True\"",
    "Image_URL": "https://cdn.shopify.com/s/files/1/0556/8898/6785/products/LABYESTEARS8ml.png?v=1661734809"
  }
 ]
-
-response = requests.post(url, headers=headers, json=payload)
-
-if response.status_code == 200:
-    print("Solicitud exitosa")
-    print("Respuesta del servidor:", response.json())
-else:
-    print("Error en la solicitud")
-    print("Código de estado:", response.status_code)
-    print("Respuesta del servidor:", response.text)
